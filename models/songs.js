@@ -1,11 +1,11 @@
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
 
-let songSchema = new Schema ({
+let SongSchema = new Schema ({
 	name: String,
 	trackNumber: Number
 });
 
-let Song = mongoose.model('song', songSchema);
+let Song = mongoose.model('Song', SongSchema);
 
 module.exports = Song;
